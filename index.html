@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div id="content">
+        <h1>PDF Generation in JavaScript</h1>
+        <p>This is an example of generating a multi-page PDF using JavaScript libraries.</p>
+        <p>It automatically handles content that is longer than one page.</p>
+        <p>Scroll down for more content.</p>
+
+        <div style="height: 1000px; background: #f4f4f4; text-align: center;">
+            <p style="padding-top: 450px;">This section is added to simulate a longer document.</p>
+        </div>
+    </div>
+    
+    <button onclick="renderW3schoolPage()">Render w3school page</button>
+    <iframe id="w3school-page"></iframe>
+
+    <button onclick="generatePDF()">Generate PDF</button>
+    <iframe id="pdf-preview"></iframe>
+
+    
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
